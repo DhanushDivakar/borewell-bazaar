@@ -2,7 +2,9 @@ import { motion } from "framer-motion";
 import { ServiceCard } from "@/components/ServiceCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { ContactBanner } from "@/components/ContactBanner";
-import { Drill, Filter, Cpu, Search, MapPin, Clock, Phone, Mail, Users2 } from "lucide-react";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { Drill, Filter, Cpu, Search, MapPin, Clock, Phone, Mail, Users2, CheckCircle2 } from "lucide-react";
 
 const Index = () => {
   const services = [
@@ -41,53 +43,78 @@ const Index = () => {
     },
   ];
 
+  const whyChooseUs = [
+    {
+      title: "Experienced Team",
+      description: "Our skilled professionals bring 15+ years of expertise in borewell services.",
+      icon: <Users2 className="w-6 h-6" />,
+    },
+    {
+      title: "Advanced Technology",
+      description: "We use state-of-the-art equipment for precise and efficient borewell solutions.",
+      icon: <Cpu className="w-6 h-6" />,
+    },
+    {
+      title: "24/7 Support",
+      description: "Round-the-clock customer support for emergency services.",
+      icon: <Phone className="w-6 h-6" />,
+    },
+    {
+      title: "Quality Assurance",
+      description: "Commitment to delivering high-quality services and customer satisfaction.",
+      icon: <CheckCircle2 className="w-6 h-6" />,
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-primary to-secondary text-white">
-      <ContactBanner />
+    <div className="min-h-screen bg-white">
+      <Header />
       
       {/* Hero Section */}
       <motion.section 
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="container px-4 py-20 text-center"
+        className="pt-24 bg-gradient-to-b from-secondary to-white"
       >
-        <motion.img
-          initial={{ scale: 0.8 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.5 }}
-          src="/lovable-uploads/4be88929-b61c-44c9-8d4a-8531b5c0ff2a.png"
-          alt="SSS Borwell Logo"
-          className="mx-auto mb-8 h-24 object-contain"
-        />
-        <motion.h1 
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          className="text-4xl md:text-6xl font-bold mb-4"
-        >
-          One Stop Solution for All
-        </motion.h1>
-        <motion.p 
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="text-xl text-gray-300 mb-8"
-        >
-          Your trusted partner in borewell solutions for over 15 years
-        </motion.p>
-        <motion.a
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.4 }}
-          href="tel:+919606158125"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-accent rounded-full text-white font-semibold hover:bg-accent/90 transition-colors"
-        >
-          <Phone className="w-5 h-5" />
-          Contact Us Now
-        </motion.a>
+        <div className="container px-4 py-20 text-center">
+          <motion.img
+            initial={{ scale: 0.8 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.5 }}
+            src="/lovable-uploads/4be88929-b61c-44c9-8d4a-8531b5c0ff2a.png"
+            alt="SSS Borwell Logo"
+            className="mx-auto mb-8 h-24 object-contain"
+          />
+          <motion.h1 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            className="text-4xl md:text-6xl font-bold mb-4"
+          >
+            One Stop Solution for All
+          </motion.h1>
+          <motion.p 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="text-xl text-gray-300 mb-8"
+          >
+            Your trusted partner in borewell solutions for over 15 years
+          </motion.p>
+          <motion.a
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.4 }}
+            href="tel:+919606158125"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-accent rounded-full text-white font-semibold hover:bg-accent/90 transition-colors"
+          >
+            <Phone className="w-5 h-5" />
+            Contact Us Now
+          </motion.a>
+        </div>
       </motion.section>
 
       {/* Services Section */}
-      <section className="container px-4 py-20">
+      <section id="services" className="container px-4 py-20">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Our Services</h2>
           <p className="text-gray-300">Comprehensive borewell solutions for all your needs</p>
@@ -100,7 +127,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="container px-4 py-20">
+      <section id="about" className="container px-4 py-20 bg-secondary/20">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">15+ Years of Excellence</h2>
           <p className="text-gray-300 mb-6">
@@ -126,8 +153,27 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Why Choose Us Section */}
+      <section id="why-choose-us" className="container px-4 py-20">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4">Why Choose SSS Borwell?</h2>
+          <p className="text-gray-600">Experience excellence in borewell services</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {whyChooseUs.map((item, index) => (
+            <ServiceCard
+              key={index}
+              title={item.title}
+              description={item.description}
+              icon={item.icon}
+              className="bg-white shadow-lg hover:shadow-xl"
+            />
+          ))}
+        </div>
+      </section>
+
       {/* Testimonials Section */}
-      <section className="container px-4 py-20">
+      <section className="container px-4 py-20 bg-secondary/20">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">What Our Clients Say</h2>
           <p className="text-gray-300">Trusted by homeowners and businesses alike</p>
@@ -140,26 +186,38 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="container px-4 py-20">
+      <section id="contact" className="container px-4 py-20">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">Contact Us</h2>
-          <div className="space-y-6">
-            <a href="tel:+919606158125" className="flex items-center justify-center gap-2 text-xl hover:text-accent transition-colors">
-              <Phone className="w-6 h-6" />
-              +91 9606158125
-            </a>
-            <div className="flex items-center justify-center gap-2 text-xl">
-              <MapPin className="w-6 h-6" />
-              Chikkaballapur, Bengaluru, Karnataka
-            </div>
+          <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              className="p-6 rounded-lg bg-white shadow-lg"
+            >
+              <Phone className="w-8 h-8 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Call Us</h3>
+              <a href="tel:+919606158125" className="text-primary hover:underline">
+                +91 9606158125
+              </a>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              className="p-6 rounded-lg bg-white shadow-lg"
+            >
+              <Mail className="w-8 h-8 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Email Us</h3>
+              <a href="mailto:contact@sssborwell.com" className="text-primary hover:underline">
+                contact@sssborwell.com
+              </a>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="container px-4 py-8 text-center border-t border-white/10">
-        <p className="text-gray-300">© 2024 SSS Borwell. All rights reserved.</p>
-      </footer>
+      <Footer />
+      <ContactBanner />
     </div>
   );
 };
