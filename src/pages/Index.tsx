@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ServiceCard } from "@/components/ServiceCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { ContactBanner } from "@/components/ContactBanner";
-import { Drill, Filter, Cpu, Search, MapPin, Clock, Phone, Mail } from "lucide-react";
+import { Drill, Filter, Cpu, Search, MapPin, Clock, Phone, Mail, Users2 } from "lucide-react";
 
 const Index = () => {
   const services = [
@@ -118,7 +118,7 @@ const Index = () => {
               <p className="text-sm text-gray-300">Chikkaballapur & Bengaluru</p>
             </div>
             <div className="p-6 rounded-lg bg-white/5 backdrop-blur-sm">
-              <Users className="w-8 h-8 text-accent mx-auto mb-4" />
+              <Users2 className="w-8 h-8 text-accent mx-auto mb-4" />
               <h3 className="font-semibold mb-2">1000+</h3>
               <p className="text-sm text-gray-300">Satisfied Clients</p>
             </div>
