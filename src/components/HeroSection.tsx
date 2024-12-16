@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Phone } from "lucide-react";
 
 export const HeroSection = () => {
   return (
@@ -11,7 +12,7 @@ export const HeroSection = () => {
         backgroundPosition: 'center',
       }}
     >
-      <div className="absolute inset-0 bg-black/50" /> {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/50" />
       <div className="container px-4 py-20 text-center relative z-10">
         <motion.img
           initial={{ scale: 0.8 }}
