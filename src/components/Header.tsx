@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, Mail } from "lucide-react";
+import { Phone } from "lucide-react";
 
 export const Header = () => {
   return (
@@ -17,9 +17,9 @@ export const Header = () => {
           />
         </div>
         <nav className="hidden md:flex items-center gap-6">
+          <a href="#home" className="text-gray-600 hover:text-primary transition-colors">Home</a>
           <a href="#services" className="text-gray-600 hover:text-primary transition-colors">Services</a>
-          <a href="#about" className="text-gray-600 hover:text-primary transition-colors">About</a>
-          <a href="#why-choose-us" className="text-gray-600 hover:text-primary transition-colors">Why Choose Us</a>
+          <a href="#about" className="text-gray-600 hover:text-primary transition-colors">About Us</a>
           <a href="#contact" className="text-gray-600 hover:text-primary transition-colors">Contact</a>
         </nav>
         <div className="flex items-center gap-4">

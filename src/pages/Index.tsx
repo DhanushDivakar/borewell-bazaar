@@ -4,6 +4,7 @@ import { TestimonialCard } from "@/components/TestimonialCard";
 import { ContactBanner } from "@/components/ContactBanner";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { HeroSection } from "@/components/HeroSection";
 import { Drill, Filter, Cpu, Search, MapPin, Clock, Phone, Mail, Users2, CheckCircle2 } from "lucide-react";
 
 const Index = () => {
@@ -69,50 +70,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
+      <HeroSection />
       
-      {/* Hero Section */}
-      <motion.section 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="pt-24 bg-gradient-to-b from-secondary to-white"
-      >
-        <div className="container px-4 py-20 text-center">
-          <motion.img
-            initial={{ scale: 0.8 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.5 }}
-            src="/lovable-uploads/4be88929-b61c-44c9-8d4a-8531b5c0ff2a.png"
-            alt="SSS Borwell Logo"
-            className="mx-auto mb-8 h-24 object-contain"
-          />
-          <motion.h1 
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            className="text-4xl md:text-6xl font-bold mb-4"
-          >
-            One Stop Solution for All
-          </motion.h1>
-          <motion.p 
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="text-xl text-gray-300 mb-8"
-          >
-            Your trusted partner in borewell solutions for over 15 years
-          </motion.p>
-          <motion.a
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            href="tel:+919606158125"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-accent rounded-full text-white font-semibold hover:bg-accent/90 transition-colors"
-          >
-            <Phone className="w-5 h-5" />
-            Contact Us Now
-          </motion.a>
-        </div>
-      </motion.section>
-
       {/* Services Section */}
       <section id="services" className="container px-4 py-20">
         <div className="text-center mb-12">
