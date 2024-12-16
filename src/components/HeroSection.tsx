@@ -34,7 +34,7 @@ export const HeroSection = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.4 }}
           href="tel:+919606158125"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-[#8B4513] hover:bg-[#8B4513]/90 rounded-full text-white font-semibold transition-colors"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-[#1B4B7F] hover:bg-[#1B4B7F]/90 rounded-full text-white font-semibold transition-colors"
         >
           <Phone className="w-5 h-5" />
           Contact Us Now
