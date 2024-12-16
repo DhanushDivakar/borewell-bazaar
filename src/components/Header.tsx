@@ -11,7 +11,7 @@ export const Header = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center gap-4">
           <img
-            src="/lovable-uploads/4be88929-b61c-44c9-8d4a-8531b5c0ff2a.png"
+            src="/lovable-uploads/c883835c-c727-4869-821e-5454ebb93c94.png"
             alt="SSS Borwell Logo"
             className="h-12 object-contain"
           />
