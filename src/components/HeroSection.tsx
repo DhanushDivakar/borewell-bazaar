@@ -14,14 +14,6 @@ export const HeroSection = () => {
     >
       <div className="absolute inset-0 bg-black/50" />
       <div className="container px-4 py-20 text-center relative z-10">
-        <motion.img
-          initial={{ scale: 0.8 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.5 }}
-          src="/lovable-uploads/4be88929-b61c-44c9-8d4a-8531b5c0ff2a.png"
-          alt="SSS Borwell Logo"
-          className="mx-auto mb-8 h-24 object-contain"
-        />
         <motion.h1 
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
