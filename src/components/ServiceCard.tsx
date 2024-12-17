@@ -4,12 +4,11 @@ import { cn } from "@/lib/utils";
 interface ServiceCardProps {
   title: string;
   description: string;
-  icon: React.ReactNode;
   image: string;
   className?: string;
 }
 
-export const ServiceCard = ({ title, description, icon, image, className }: ServiceCardProps) => {
+export const ServiceCard = ({ title, description, image, className }: ServiceCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -35,9 +34,6 @@ export const ServiceCard = ({ title, description, icon, image, className }: Serv
       
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center p-6 text-white">
-        <div className="w-14 h-14 mb-4 text-white flex items-center justify-center rounded-full bg-primary/80">
-          {icon}
-        </div>
         <h3 className="text-xl font-semibold mb-3">{title}</h3>
         <p className="text-white/90 text-center text-sm">{description}</p>
       </div>
