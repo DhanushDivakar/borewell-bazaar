@@ -13,25 +13,25 @@ const Index = () => {
       title: "Borewell Drilling",
       description: "Professional borewell drilling services with advanced equipment and experienced team.",
       icon: <Drill className="w-6 h-6" />,
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=500&auto=format&fit=crop",
+      image: "public/lovable-uploads/9074bb5a-047f-4d18-a6b1-c4dc44f0d982.JPG",
     },
     {
       title: "Filter Borewell",
       description: "High-quality filter installation for clean and safe water supply.",
       icon: <Filter className="w-6 h-6" />,
-      image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=500&auto=format&fit=crop",
+      image: "public/lovable-uploads/9074bb5a-047f-4d18-a6b1-c4dc44f0d982.JPG",
     },
     {
       title: "Motor & Pump",
       description: "Installation and maintenance of motors and pumps for optimal performance.",
       icon: <Cpu className="w-6 h-6" />,
-      image: "https://images.unsplash.com/photo-1581092334247-ddef2a41a4f7?q=80&w=500&auto=format&fit=crop",
+      image: "public/lovable-uploads/9074bb5a-047f-4d18-a6b1-c4dc44f0d982.JPG",
     },
     {
       title: "Borewell Scanning",
       description: "Advanced scanning technology to assess borewell conditions and identify issues.",
       icon: <Search className="w-6 h-6" />,
-      image: "https://images.unsplash.com/photo-1581092160607-ee67df11c6d0?q=80&w=500&auto=format&fit=crop",
+      image: "public/lovable-uploads/9074bb5a-047f-4d18-a6b1-c4dc44f0d982.JPG",
     },
   ];
 
@@ -54,7 +54,7 @@ const Index = () => {
       <HeroSection />
       
       {/* Services Section */}
-      <section id="services" className="container px-4 py-20">
+      <section id="services" className="container px-20 py-20">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Our Services</h2>
           <p className="text-gray-600">Comprehensive borewell solutions for all your needs</p>
@@ -67,11 +67,13 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="container px-4 py-20 bg-white">
+      <section id="about" className="container px-15 py-20 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">15+ Years of Excellence</h2>
           <p className="text-gray-600 mb-6">
-            SSS Borwell has been serving the communities of Chikkaballapur and Bengaluru, Karnataka with exceptional borewell services since 2008. Our commitment to quality and customer satisfaction has made us a trusted name in the industry.
+          SSS Borwell: Your Trusted Groundwater Solutions Expert in Karnataka
+Serving the dynamic regions of Chikkaballapur and Bengaluru since 2008, SSS Borwell stands as a premier borewell drilling and groundwater management specialist. With over 15 years of comprehensive experience, we deliver innovative, reliable, and sustainable water solutions that address the critical groundwater needs of residential, agricultural, and commercial clients across Chikkaballapur and Bengaluru.
+
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             <div className="p-6 rounded-lg bg-white shadow-lg">
@@ -94,7 +96,7 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="container px-4 py-20 bg-white">
+      <section className="container px-10 py-20 bg-white">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">What Our Clients Say</h2>
           <p className="text-gray-600">Trusted by homeowners and businesses alike</p>
@@ -106,7 +108,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="container px-4 py-20">
+      <section id="contact" className="container px-20 py-20">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -129,7 +131,7 @@ const Index = () => {
               <Mail className="w-8 h-8 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Email Us</h3>
               <a href="mailto:contact@sssborwell.com" className="text-primary hover:underline">
-                contact@sssborwell.com
+                sssborewellservice@gmail.com
               </a>
             </motion.div>
           </div>

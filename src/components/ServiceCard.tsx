@@ -35,9 +35,7 @@ export const ServiceCard = ({ title, description, icon, image, className }: Serv
       
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center p-6 text-white">
-        <div className="w-16 h-16 mb-4 text-white flex items-center justify-center rounded-full bg-primary/80">
-          {icon}
-        </div>
+        
         <h3 className="text-2xl font-semibold mb-3">{title}</h3>
         <p className="text-white/90 text-center">{description}</p>
       </div>

@@ -20,7 +20,7 @@ export const Footer = () => {
               </a>
               <a href="mailto:contact@sssborwell.com" className="flex items-center gap-2 text-white/80 hover:text-white">
                 <Mail className="w-5 h-5" />
-                contact@sssborwell.com
+                sssborewellservice@gmail.com
               </a>
               <div className="flex items-center gap-2 text-white/80">
                 <MapPin className="w-5 h-5" />
