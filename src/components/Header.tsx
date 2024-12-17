@@ -13,7 +13,7 @@ export const Header = () => {
           <img
             src="/lovable-uploads/c883835c-c727-4869-821e-5454ebb93c94.png"
             alt="SSS Borwell Logo"
-            className="h-12 object-contain"
+            className="h-20 object-contain" // Increased from h-12 to h-20
           />
         </div>
         <nav className="hidden md:flex items-center gap-6">
