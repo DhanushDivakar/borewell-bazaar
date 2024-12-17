@@ -16,7 +16,7 @@ export const ServiceCard = ({ title, description, icon, image, className }: Serv
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className={cn(
-        "relative h-[400px] rounded-lg overflow-hidden group",
+        "relative h-[350px] rounded-lg overflow-hidden group",
         className
       )}
     >
@@ -35,11 +35,11 @@ export const ServiceCard = ({ title, description, icon, image, className }: Serv
       
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center p-6 text-white">
-        <div className="w-16 h-16 mb-4 text-white flex items-center justify-center rounded-full bg-primary/80">
+        <div className="w-14 h-14 mb-4 text-white flex items-center justify-center rounded-full bg-primary/80">
           {icon}
         </div>
-        <h3 className="text-2xl font-semibold mb-3">{title}</h3>
-        <p className="text-white/90 text-center">{description}</p>
+        <h3 className="text-xl font-semibold mb-3">{title}</h3>
+        <p className="text-white/90 text-center text-sm">{description}</p>
       </div>
     </motion.div>
   );
