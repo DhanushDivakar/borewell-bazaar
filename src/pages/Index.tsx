@@ -5,29 +5,32 @@ import { ContactBanner } from "@/components/ContactBanner";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/HeroSection";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
-import { MapPin, Clock, Phone, Mail, Users2 } from "lucide-react";
+import { Drill, Filter, Cpu, Search, MapPin, Clock, Phone, Mail, Users2, CheckCircle2 } from "lucide-react";
 
 const Index = () => {
   const services = [
     {
       title: "Borewell Drilling",
       description: "Professional borewell drilling services with advanced equipment and experienced team.",
+      icon: <Drill className="w-6 h-6" />,
       image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=500&auto=format&fit=crop",
     },
     {
       title: "Filter Borewell",
       description: "High-quality filter installation for clean and safe water supply.",
+      icon: <Filter className="w-6 h-6" />,
       image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=500&auto=format&fit=crop",
     },
     {
       title: "Motor & Pump",
       description: "Installation and maintenance of motors and pumps for optimal performance.",
+      icon: <Cpu className="w-6 h-6" />,
       image: "https://images.unsplash.com/photo-1581092334247-ddef2a41a4f7?q=80&w=500&auto=format&fit=crop",
     },
     {
       title: "Borewell Scanning",
       description: "Advanced scanning technology to assess borewell conditions and identify issues.",
+      icon: <Search className="w-6 h-6" />,
       image: "https://images.unsplash.com/photo-1581092160607-ee67df11c6d0?q=80&w=500&auto=format&fit=crop",
     },
   ];
@@ -42,16 +45,6 @@ const Index = () => {
       content: "The scanning service helped us identify and fix issues with our old borewell. Highly recommended!",
       author: "Priya Sharma",
       role: "Homeowner",
-    },
-    {
-      content: "Outstanding service! The team was punctual, professional, and completed the work within the promised timeframe.",
-      author: "Suresh Patel",
-      role: "Business Owner",
-    },
-    {
-      content: "Very satisfied with their motor installation service. The team's expertise is commendable.",
-      author: "Anita Reddy",
-      role: "Apartment Complex Manager",
     },
   ];
 
@@ -106,18 +99,13 @@ const Index = () => {
           <h2 className="text-3xl font-bold mb-4">What Our Clients Say</h2>
           <p className="text-gray-600">Trusted by homeowners and businesses alike</p>
         </div>
-        <Carousel className="w-full max-w-5xl mx-auto" opts={{ align: "start", loop: true }}>
-          <CarouselContent>
-            {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
-                <TestimonialCard {...testimonial} />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {testimonials.map((testimonial, index) => (
+            <TestimonialCard key={index} {...testimonial} />
+          ))}
+        </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="container px-4 py-20">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>

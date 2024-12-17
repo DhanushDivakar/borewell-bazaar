@@ -4,18 +4,19 @@ import { cn } from "@/lib/utils";
 interface ServiceCardProps {
   title: string;
   description: string;
+  icon: React.ReactNode;
   image: string;
   className?: string;
 }
 
-export const ServiceCard = ({ title, description, image, className }: ServiceCardProps) => {
+export const ServiceCard = ({ title, description, icon, image, className }: ServiceCardProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className={cn(
-        "relative h-[350px] rounded-lg overflow-hidden group",
+        "relative h-[400px] rounded-lg overflow-hidden group",
         className
       )}
     >
@@ -34,8 +35,11 @@ export const ServiceCard = ({ title, description, image, className }: ServiceCar
       
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center p-6 text-white">
-        <h3 className="text-xl font-semibold mb-3">{title}</h3>
-        <p className="text-white/90 text-center text-sm">{description}</p>
+        <div className="w-16 h-16 mb-4 text-white flex items-center justify-center rounded-full bg-primary/80">
+          {icon}
+        </div>
+        <h3 className="text-2xl font-semibold mb-3">{title}</h3>
+        <p className="text-white/90 text-center">{description}</p>
       </div>
     </motion.div>
   );
