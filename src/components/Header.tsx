@@ -6,7 +6,7 @@ export const Header = () => {
     <motion.header
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="bg-white shadow-sm py-4 fixed w-full top-0 z-50"
+      className="bg-white shadow-sm py-2 fixed w-full top-0 z-50"
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center gap-4">
