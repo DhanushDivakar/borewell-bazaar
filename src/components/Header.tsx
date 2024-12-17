@@ -11,9 +11,9 @@ export const Header = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center gap-4">
           <img
-            src="/lovable-uploads/c883835c-c727-4869-821e-5454ebb93c94.png"
+            src="/lovable-uploads/a24525de-2d40-428f-b106-3ffacb3be616.png"
             alt="SSS Borwell Logo"
-            className="h-20 object-contain" // Increased from h-12 to h-20
+            className="h-20 object-contain"
           />
         </div>
         <nav className="hidden md:flex items-center gap-6">

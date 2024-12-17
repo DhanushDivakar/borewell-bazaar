@@ -16,17 +16,30 @@ export const ServiceCard = ({ title, description, icon, image, className }: Serv
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className={cn(
-        "p-6 rounded-lg bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300",
+        "relative h-[400px] rounded-lg overflow-hidden group",
         className
       )}
     >
-      <div className="w-12 h-12 mb-4 text-accent flex items-center justify-center rounded-full bg-accent/10">
-        {icon}
-      </div>
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-muted-foreground mb-4">{description}</p>
-      <div className="w-full h-48 rounded-lg overflow-hidden">
-        <img src={image} alt={title} className="w-full h-full object-cover" />
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 w-full h-full"
+        style={{
+          backgroundImage: `url(${image})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      />
+      
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/50 group-hover:bg-black/70 transition-colors duration-300" />
+      
+      {/* Content */}
+      <div className="relative z-10 h-full flex flex-col items-center justify-center p-6 text-white">
+        <div className="w-16 h-16 mb-4 text-white flex items-center justify-center rounded-full bg-primary/80">
+          {icon}
+        </div>
+        <h3 className="text-2xl font-semibold mb-3">{title}</h3>
+        <p className="text-white/90 text-center">{description}</p>
       </div>
     </motion.div>
   );
