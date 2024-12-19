@@ -13,17 +13,40 @@ export const Header = () => {
           <img
             src="/lovable-uploads/a24525de-2d40-428f-b106-3ffacb3be616.png"
             alt="SSS Borwell Logo"
-            className="h-20 object-contain"
+            className="h-12 object-contain"
           />
         </div>
         <nav className="hidden md:flex items-center gap-6">
-          <a href="#home" className="text-gray-600 hover:text-primary transition-colors">Home</a>
-          <a href="#services" className="text-gray-600 hover:text-primary transition-colors">Services</a>
-          <a href="#about" className="text-gray-600 hover:text-primary transition-colors">About Us</a>
-          <a href="#contact" className="text-gray-600 hover:text-primary transition-colors">Contact</a>
+          <a
+            href="#home"
+            className="text-gray-600 hover:text-primary transition-colors"
+          >
+            Home
+          </a>
+          <a
+            href="#services"
+            className="text-gray-600 hover:text-primary transition-colors"
+          >
+            Services
+          </a>
+          <a
+            href="#about"
+            className="text-gray-600 hover:text-primary transition-colors"
+          >
+            About Us
+          </a>
+          <a
+            href="#contact"
+            className="text-gray-600 hover:text-primary transition-colors"
+          >
+            Contact
+          </a>
         </nav>
         <div className="flex items-center gap-4">
-          <a href="tel:+919606158125" className="flex items-center gap-2 text-primary">
+          <a
+            href="tel:+919606158125"
+            className="flex items-center gap-2 text-primary"
+          >
             <Phone className="w-5 h-5" />
             <span className="hidden md:inline">+91 9606158125</span>
           </a>

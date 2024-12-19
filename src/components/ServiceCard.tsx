@@ -31,7 +31,7 @@ export const ServiceCard = ({ title, description, icon, image, className }: Serv
       />
       
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50 group-hover:bg-black/70 transition-colors duration-300" />
+      <div className="absolute inset-0 bg-black/50 group-hover:bg-black/50 transition-colors duration-300" />
       
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center p-6 text-white">

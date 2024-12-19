@@ -12,7 +12,7 @@ export const HeroSection = () => {
         backgroundPosition: 'center',
       }}
     >
-      <div className="absolute inset-0 bg-[#1B4B7F]/50" />
+      <div className="absolute inset-0 bg-[#1B4B7F]/60" />
       <div className="container px-4 py-20 text-center relative z-10">
         <motion.h1 
           initial={{ y: 20, opacity: 0 }}
@@ -27,7 +27,7 @@ export const HeroSection = () => {
           transition={{ delay: 0.2 }}
           className="text-xl text-white/90 mb-8"
         >
-          Professional borewell drilling services with advanced technology and years of expertise
+          Professional borewell drilling services with advanced technology and 15+ years of expertise
         </motion.p>
         <motion.a
           initial={{ y: 20, opacity: 0 }}
