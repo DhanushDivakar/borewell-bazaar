@@ -65,7 +65,7 @@ const Index = () => {
     },
     {
       content:
-        "WSS Borewells provided excellent service for our motor and pump installation. Their team was skilled, efficient, and ensured everything was set up perfectly. Highly recommended!",
+        "SSS Borewells provided excellent service for our motor and pump installation. Their team was skilled, efficient, and ensured everything was set up perfectly. Highly recommended!",
       author: "Rajesh & Meena Gupta",
       role: "Homeowner",
     },
