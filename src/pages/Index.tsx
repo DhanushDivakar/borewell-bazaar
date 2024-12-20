@@ -65,7 +65,7 @@ const Index = () => {
     },
     {
       content:
-        "We are thrilled with our new home! SSS Construction was professional, reliable, and delivered our dream house right on time. The attention to detail was remarkable. Highly recommend their services!",
+        "WSS Borewells provided excellent service for our motor and pump installation. Their team was skilled, efficient, and ensured everything was set up perfectly. Highly recommended!",
       author: "Rajesh & Meena Gupta",
       role: "Homeowner",
     },
