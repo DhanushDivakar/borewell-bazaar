@@ -142,7 +142,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="container px-20 py-20">
+      <section id="contact" className="container px-4 md:px-20 py-20">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -168,8 +168,8 @@ const Index = () => {
               <Mail className="w-8 h-8 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Email Us</h3>
               <a
-                href="mailto:contact@sssborwell.com"
-                className="text-primary hover:underline"
+                href="mailto:sssborewellservice@gmail.com"
+                className="text-primary hover:underline break-words"
               >
                 sssborewellservice@gmail.com
               </a>
